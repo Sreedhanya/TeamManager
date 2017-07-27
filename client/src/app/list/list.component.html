@@ -1,0 +1,7 @@
+<h4>Welcome</h4>
+  <table border="1">
+    <tr><th>Name</th><th>Preffered Position</th><th>Actions</th></tr>  
+   <tr *ngFor="let player of players"><td> {{ player.name }}</td>
+<td> {{ player.preference }}</td>
+<td> <button (click)="deletePlayer(player)">DELETE</button></td>
+</table>
